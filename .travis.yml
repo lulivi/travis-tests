@@ -1,6 +1,7 @@
 addons:
   apt:
     sources:
+      - llvm-toolchain-trusty
       - key_url: 'http://apt.llvm.org/llvm-snapshot.gpg.key'
     packages:
       - clang-format-9
