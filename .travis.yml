@@ -1,6 +1,7 @@
 dist: Xenial
 addons:
   apt:
+    sources:
       - key_url: 'http://apt.llvm.org/llvm-snapshot.gpg.key'
 before_install:
   - sudo apt-get install -y clang-format-9
