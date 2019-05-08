@@ -1,6 +1,6 @@
 dist: Xenial
 before_install:
-  - wget -O - h ttps://apt.llvm.org/llvm-snapshot.gpg.key | apt-key add -
+  - wget -O - h ttps://apt.llvm.org/llvm-snapshot.gpg.key | sudo apt-key add -
   - add-apt-repository 'deb http://apt.llvm.org/trusty/ llvm-toolchain-trusty main'
   - add-apt-repository ppa:ubuntu-toolchain-r/test
   - apt update
