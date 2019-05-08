@@ -1,9 +1,9 @@
 dist: Xenial
 before_install:
   - wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key|sudo apt-key add -
-  - add-apt-repository 'deb http://apt.llvm.org/trusty/ llvm-toolchain-trusty main'
-  - add-apt-repository ppa:ubuntu-toolchain-r/test
-  - apt update
-  - apt-get install -y clang
+  - sudo add-apt-repository 'deb http://apt.llvm.org/trusty/ llvm-toolchain-trusty main'
+  - sudo add-apt-repository ppa:ubuntu-toolchain-r/test
+  - sudo apt update
+  - sudo apt-get install -y clang
 script:
   - clang-format --version
