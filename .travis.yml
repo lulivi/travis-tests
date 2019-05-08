@@ -1,11 +1,8 @@
 dist: Xenial
 addons:
   apt:
-    sources:
-      - llvm-toolchain-trusty
       - key_url: 'http://apt.llvm.org/llvm-snapshot.gpg.key'
-    packages:
-      - libllvm9
-      - clang-format-9
+before_install:
+  - sudo apt-get install -y clang-format-9
 script:
-  - clang-format9 --version
+  - clang-format --version
