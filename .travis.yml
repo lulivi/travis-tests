@@ -9,5 +9,4 @@ before_install:
   - sudo apt-get install -y clang-format-9
   - npm install -g markdownlint-cli
 script:
-  - clang-format-9 --version
-  - markdownlint --version
+  - scripts/test.sh
