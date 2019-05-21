@@ -11,3 +11,4 @@ before_install:
   - sudo apt install tree
 script:
   - tree
+  - pwd
