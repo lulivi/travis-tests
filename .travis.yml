@@ -10,5 +10,5 @@ before_install:
   - npm install -g markdownlint-cli
   - sudo apt install tree
 script:
-  - tree
-  - pwd
+  - python3 --version
+  - ls /usr/bin/python*
