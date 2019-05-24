@@ -1,12 +1,11 @@
 dist: Xenial
-language: node_js
-node_js:
-  - "6"
+language: python
+python: 
+  - "3.6"
 before_install:
-  - sudo add-apt-repository ppa:jonathonf/python-3.6
-  - sudo apt update
+  - curl -sL https://deb.nodesource.com/setup_6.x | bash -
 install:
-  - sudo apt-get install python3.6
+  - sudo apt install -y nodejs
 script:
-  - python3 --version
-  - ls /usr/bin/python*
+  - ls /usr/bin/python*\
+  - node --version
