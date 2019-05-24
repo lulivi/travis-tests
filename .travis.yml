@@ -3,13 +3,10 @@ language: node_js
 node_js:
   - "6"
 before_install:
-  - wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key|sudo apt-key add -
-  - sudo add-apt-repository -y 'deb http://apt.llvm.org/xenial/ llvm-toolchain-xenial main'
+  - sudo add-apt-repository ppa:jonathonf/python-3.6
   - sudo apt update
-  - sudo apt-get install -y clang-format-9
-  - npm install -g markdownlint-cli
-  - sudo apt install tree
-  - sudo apt install python3.6
+install:
+  - sudo apt-get install python3.6
 script:
   - python3 --version
   - ls /usr/bin/python*
