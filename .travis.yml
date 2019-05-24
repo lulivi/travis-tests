@@ -9,6 +9,7 @@ before_install:
   - sudo apt-get install -y clang-format-9
   - npm install -g markdownlint-cli
   - sudo apt install tree
+  - sudo apt install python3.6
 script:
   - python3 --version
   - ls /usr/bin/python*
