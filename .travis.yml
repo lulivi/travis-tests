@@ -2,10 +2,6 @@ dist: Xenial
 language: python
 python: 
   - "3.6"
-before_install:
-  - curl -sL https://deb.nodesource.com/setup_6.x | bash -
-install:
-  - sudo apt install -y nodejs
 script:
   - ls /usr/bin/python*\
   - node --version
