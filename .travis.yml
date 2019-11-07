@@ -8,7 +8,7 @@ addons:
     - sourceline: llvm-toolchain-xenial-9
       key_url: https://apt.llvm.org/llvm-snapshot.gpg.key
     packages:
-    - clang-format-9.0
+    - clang-format-9
 script:
   - clang-format --version
   - clang-format-9 --version
