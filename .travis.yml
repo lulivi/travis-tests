@@ -5,8 +5,8 @@ addons:
   apt:
     update: true
     sources:
-    - sourceline: llvm-toolchain-xenial-9
-      key_url: https://apt.llvm.org/llvm-snapshot.gpg.key
+    - sourceline: "deb http://apt.llvm.org/xenial/ llvm-toolchain-xenial-9 main"
+      key_url: "https://apt.llvm.org/llvm-snapshot.gpg.key"
     packages:
     - clang-format-9
 script:
